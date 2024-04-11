@@ -1,0 +1,17 @@
+.btn button{
+    border-radius: 10px;
+    background: #000000;
+    box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.10);
+    border: 2px solid #000000;
+    width: 207px;
+    height: 56px;
+    cursor: pointer;
+    
+    color: #fff;
+
+}
+.btn button:hover{
+    color: #000000;
+    background: #fff;
+    transition: .25s;
+}
