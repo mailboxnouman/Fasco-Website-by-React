@@ -1,0 +1,154 @@
+.newArrivals-main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+    max-width: 1550px;
+    margin: 0 auto;
+}
+.head1{
+    font-family: Volkhov;
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 59.34px;
+    text-align: center;
+    color: rgba(72, 72, 72, 1);
+    margin: 1rem 0;
+    
+}
+.para1{
+    font-family: Poppins;
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+text-align: center;
+color: rgba(138, 138, 138, 1);
+width: 650px;
+
+}
+.newArrivals-catg{
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+.newArrivals-catg div:nth-of-type(1) button,
+.newArrivals-catg div:nth-of-type(3) button,
+.newArrivals-catg div:nth-of-type(4) button,
+.newArrivals-catg div:nth-of-type(5) button,
+.newArrivals-catg div:nth-of-type(6) button
+{
+    box-shadow: none ;
+    color: rgba(138, 138, 138, 1) ;
+    background: rgba(250, 250, 250, 1) ;
+    border: 2px solid rgba(250, 250, 250, 1) ;
+}
+.newArrivals-catg div:nth-of-type(1) button:hover,
+.newArrivals-catg div:nth-of-type(3) button:hover,
+.newArrivals-catg div:nth-of-type(4) button:hover,
+.newArrivals-catg div:nth-of-type(5) button:hover,
+.newArrivals-catg div:nth-of-type(6) button:hover{
+    color: #fff;
+    background: #000;
+    transition: .25s;
+}
+
+
+.newArrivals-catg div:nth-of-type(2) button{
+    background: #000000 ;
+    box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.10) ;
+    border: 2px solid #000000 ;
+    color: #fff ;
+}
+.newArrivals-catg div:nth-of-type(2) button:hover{
+    color: #000000;
+    background: #fff;
+    transition: .25s;
+    border: 2px dotted #000000 ;
+
+}
+.newArrivals-card{
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.newArrivals-card .card{
+    margin: 2.5rem;
+}
+
+@media screen and (max-width: 1700px){
+    .newArrivals-main{
+        max-width: 1350px;
+    }
+    .newArrivals-card .card{
+        margin: 1rem;
+        width: 400px;
+        height: 470px;
+    }
+    .newArrivals-card .card .card-img{
+        width: 400px;
+        height: 280px;
+    }
+    .newArrivals-card .card .card-img img{
+        width: 340px;
+        height: 270px;
+    }
+   
+}
+@media screen and (max-width: 1580px){
+    .newArrivals-main{
+        max-width: 1100px;
+    }
+    .newArrivals-catg{
+        max-width: 900px;
+        flex-wrap: wrap;
+        padding: 0 2rem;
+    }
+    .newArrivals-catg div button{
+        width: 150px;
+        height: 40px;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 1200px){
+    .newArrivals-main{
+        max-width: 1050px;
+    }
+}
+@media screen and (max-width: 1050px){
+    .para1{
+        width: 100%;
+        max-width: 650px;
+        padding: 0 2rem;
+    }
+}
+@media screen and (max-width: 550px){
+    .card{
+        margin: 20px 0 0 !important;
+        
+    }
+    .newArrivals-card{
+        flex-direction: column;
+        margin: 0;
+        width: 320px;
+    }
+    .newArrivals-card .card{
+        width: 320px;
+        height: 390px;
+        margin: 0;
+    }
+    .newArrivals-card .card .card-img{
+        width: 320px;
+        height: 200px;
+    }
+    .newArrivals-card .card  .card-img img{
+        width: 280px;
+        height: 200px;
+    }
+    .last-btn .btn button{
+        margin-top: 20px;
+    }
+}

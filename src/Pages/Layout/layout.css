@@ -10,9 +10,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3rem 14rem 0;
+    padding: 3rem 0rem 1rem 0rem;
     width: 100%;
-    max-width: 2000px;
+    max-width: 1580px;
     margin: 0 auto;
 }
 
@@ -133,7 +133,7 @@ li.signup{
     background-color: #FAFAFA;  
     border-radius: 20px;
     text-align: center;
-    /* height: 420px; */
+    /* min-height: 90px; */
 }
 .navbar-menu_container p{
     margin: 1rem 0;
@@ -148,10 +148,15 @@ li.signup{
 .hidden{
     display: none;
 }
-  
+
+@media screen and (max-width: 1700px){
+    .navbar{
+        max-width: 1380px;
+    }
+}
 @media screen and (max-width: 1580px){
     .navbar{
-        padding: 3rem 8rem;
+        max-width: 1130px;
     }
     li{
         padding: 1rem 1rem;
@@ -159,12 +164,15 @@ li.signup{
 }
 @media screen and (max-width: 1200px){
     .navbar{
-        padding: 3rem 3rem;
+        max-width: 1080px;
     }
     
 
 }
 @media screen and (max-width: 1050px){
+    .navbar{
+        padding: 3rem 1rem 1rem 1rem;
+    }
     li{
         display: block;
         margin: 0 2rem;

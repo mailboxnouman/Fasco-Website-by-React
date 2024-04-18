@@ -1,0 +1,217 @@
+.deals-m{
+    height: 550px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #FAFAFA 100%);
+    display: flex;
+    align-items: center;
+}
+.deals-main{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 0rem 1rem 0;
+    width: 100%;
+    max-width: 1550px;
+    margin: 0 auto;
+
+}
+.deals-txt h1{
+    font-family: Volkhov;
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 59.34px;
+    text-align: left;
+    color: rgba(72, 72, 72, 1);
+    margin-bottom: 1.5rem;
+}
+.deals-para1{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: rgba(138, 138, 138, 1);
+    max-width: 420px;
+}
+
+.deals-txt button{
+    margin: 1rem 0;
+    width: 207px;
+
+}
+.deals-txt .btn, .deals-btn{
+    width: 207px;
+}
+.deals-para2 {
+    font-family: Poppins;
+font-size: 28px;
+font-weight: 500;
+line-height: 42px;
+text-align: left;
+margin: 1rem 0;
+}
+
+.timer{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Digital Numbers';
+font-size: 32px;
+font-weight: 400;
+line-height: 32px;
+text-align: left;
+    width: 400px;
+}
+.days, .hr, .mins, .sec{
+    width: 75px;
+    height: 75px;
+    background: #fff;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.16);
+
+}
+.time-info{
+    display: flex;
+    width: 390px;
+    justify-content: space-between;
+}
+.time-info p{
+    font-family: Poppins;
+font-size: 24px;
+font-weight: 400;
+line-height: 28.8px;
+text-align: center;
+width: 75px;
+margin-top: 15px;
+}
+
+.deals-img{
+    width: 65%;
+}
+
+
+.carroselBox{
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 1700px){
+    .deals-main{
+        max-width: 1380px;
+    }
+}
+@media screen and (max-width: 1580px){
+    .deals-main{
+        max-width: 1100px;
+    }
+    .deals-txt h1{
+        font-size: 40px;
+        margin-bottom: 1rem;
+    }
+    .deals-para1{
+        font-size: 14px;
+        max-width: 370px;
+    }
+    
+    .deals-txt button{
+        margin: 0.5rem 0;
+        width: 207px;
+    
+    }
+    .deals-para2 {
+    font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .deals-main{
+        max-width: 1050px;
+    }
+}
+@media screen and (max-width: 1050px){
+    .deals-m{
+        height: 1000px;
+
+    }
+    .deals-main{
+        /* max-width: 1050px; */
+        flex-direction: column;
+        align-items: center;
+        height: 950px;
+
+    }
+    .deals-img, .deals-txt{
+        width: 85%;
+    }
+    .deals-txt h1{
+        font-size: 45px;
+    }
+    .deals-txt{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .deals-para1{
+        text-align: center;
+        font-size: 16px;
+    }
+    .carroselBox{
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 550px){
+    .deals-txt h1{
+        font-size: 35px;
+        line-height: 45px;
+        text-align: center;
+    }
+    .deals-para1{
+        font-size: 13px;
+        line-height: 22px;
+    }
+    .deals-img, .deals-txt{
+        width: 90%;
+    }
+    .btn{
+        margin-top: 10px;
+    }
+    .deals-para2{
+        font-size: 20px;
+    }
+    .timer{
+        display: flex;
+        justify-content: space-around;
+    font-size: 28px;
+        width: 300px;
+    }
+    .days, .hr, .mins, .sec{
+        width: 60px;
+        height: 60px;
+        background: #fff;
+        margin-right: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.10);
+    
+    }
+    .time-info{
+        display: flex;
+        width: 290px;
+        margin-left: 10px;
+        justify-content: space-between;
+    }
+    .time-info p{
+        font-family: Poppins;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.8px;
+    text-align: center;
+    width: 75px;
+    margin-top: 15px;
+    }
+    
+}

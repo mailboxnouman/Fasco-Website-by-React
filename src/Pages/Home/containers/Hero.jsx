@@ -1,5 +1,5 @@
 import React from 'react'
-import { Outlet, Link } from "react-router-dom";
+  import { Outlet, Link } from "react-router-dom";
 import '../containers/hero.css'
 import heroLeft from '../../../assets/image 2 28.png'
 import heroRight from '../../../assets/image 227.png'

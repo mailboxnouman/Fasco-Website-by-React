@@ -1,0 +1,350 @@
+.packages-m{
+    /* height: 550px; */
+    background: linear-gradient(180deg, #FFFFFF 0%, #FAFAFA 100%);
+    display: flex;
+    align-items: center;
+    background: url(../../../assets/bg-peaky.png);
+    background-size: cover;
+    background-position: center;
+}
+.packages-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1rem 0;
+    width: 100%;
+    max-width: 1550px;
+    margin: 0 auto;
+}
+
+/* .packages-img, .packages-txt{
+    flex: 1;
+} */
+
+.packages-txt {
+    width: 720px;
+    height: 430px;
+}
+
+.pkgSub{
+    width: 600px;
+    height: 450px;
+}
+.packages-img img{
+    width: 720px;
+    height: 570px;
+    
+}
+.packages-img {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 720px;
+    height: 570px;
+}
+.packages-txt .title{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #767676;
+    
+    
+}
+.packages-txt .heading-peaky{
+    font-family: 'Volkhov';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 59px;
+    margin: 2rem 0;
+    color: #484848;
+    
+}
+.packages-txt .discription-title{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    
+    color: #000000;
+    
+}
+.packages-txt .discription{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+margin: 1rem 0;
+color: #767676;
+
+
+}
+.size{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #767676;
+
+
+}
+.size span {
+width: 53px;
+height: 28px;
+padding: 0 1rem;
+background: #000000;
+border-radius: 10px;
+color: #fff;
+
+}
+.peaky-price{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 28px;
+line-height: 42px;
+margin: 1rem 0;
+color: #000000;
+}
+.peaky-price-sm{
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1700px){
+    .packages-main{
+        max-width: 1380px
+    }
+    
+.packages-txt {
+    width: 620px;
+    height: 430px;
+}
+
+.pkgSub{
+    width: 600px;
+    height: 450px;
+}
+.packages-img img{
+    width: 620px;
+    height: 570px;
+    
+}
+.packages-img {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 620px;
+    height: 510px;
+}
+}
+@media screen and (max-width: 1580px){
+    .packages-main{
+        max-width: 1100px
+    }
+    
+.packages-txt {
+    width: 500px;
+    height: 450px;
+    display: flex;
+}
+
+.pkgSub{
+    width: 500px;
+    height: 400px;
+    align-self: center;
+}
+.packages-img img{
+    width: 500px;
+    height: 450px;
+    
+}
+.packages-img {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    height: 450px;
+}
+
+.packages-txt .title{
+    font-size: 15px;
+    line-height: 18px;
+}
+.packages-txt .heading-peaky{
+    font-size: 40px;
+    line-height: 50px;
+    margin: 1.2rem 0;    
+}
+.packages-txt .discription-title{
+     font-size: 15px;
+    line-height: 24px;
+}
+.packages-txt .discription{
+font-size: 14px;
+line-height: 20px;
+margin: .5rem 0;
+}
+.size{
+font-size: 15px;
+}
+.peaky-price{
+font-size: 25px;
+}
+
+}
+@media screen and (max-width: 1200px){
+    .package-main{
+        max-width: 1050px;
+    }
+
+}
+@media screen and (max-width: 1050px){
+    .packages-main{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .packages-txt{
+        width: 350px;
+        align-self: flex-start;
+        position: relative;
+    }
+    .pkgSub{
+        width: 280px;
+    }
+    .packages-img{
+        width: 400px;
+        height: 360px;
+        align-self: flex-end;
+        position: absolute;
+    }
+    .packages-img img{
+        width: 400px;
+        height: 360px;
+    }
+    
+.packages-txt .title{
+    font-size: 15px;
+    line-height: 18px;
+}
+.packages-txt .heading-peaky{
+    font-size: 36px;
+    line-height: 45px;
+    margin: 1rem 0;    
+}
+.packages-txt .discription-title{
+     font-size: 15px;
+    line-height: 24px;
+}
+.packages-txt .discription{
+font-size: 13px;
+line-height: 17px;
+margin: .5rem 0;
+}
+.size{
+font-size: 15px;
+}
+.peaky-price{
+font-size: 22px;
+}
+.peaky-price-sm{
+    font-size: 17px;
+}
+.pkgSub .btn button{
+    width: 160px ;
+    height: 50px;
+}
+}
+@media screen and (max-width: 700px){
+    .packages-m{
+        background: none;
+        background-color: #F8F8F8;
+    }
+    .packages-main{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .packages-txt{
+        width: 400px;
+        align-self: center;
+        position: relative;
+        /* text-align: center; */
+    }
+    .pkgSub{
+        width: 400px;
+    }
+    .packages-img{
+        width: 400px;
+        height: 360px;
+        align-self: center;
+        position: unset;
+    }
+    .packages-img img{
+        width: 400px;
+        height: 360px;
+    }
+    
+.packages-txt .title{
+    font-size: 15px;
+    line-height: 18px;
+}
+.packages-txt .heading-peaky{
+    font-size: 36px;
+    line-height: 45px;
+    margin: 1rem 0;    
+}
+.packages-txt .discription-title{
+     font-size: 15px;
+    line-height: 24px;
+}
+.packages-txt .discription{
+font-size: 13px;
+line-height: 17px;
+margin: .5rem 0;
+text-align: justify;
+}
+.size{
+font-size: 15px;
+}
+.peaky-price{
+font-size: 22px;
+}
+.pkgSub .btn button{
+    width: 160px ;
+    height: 50px;
+}
+
+}
+
+@media screen and (max-width: 550px){
+
+    .packages-txt{
+        max-width: 300px;
+        align-self: center;
+        position: relative;
+        /* text-align: center; */
+    }
+    .pkgSub{
+        width: 300px;
+    }
+    .packages-img{
+        width: 300px;
+        height: 250px;
+        align-self: center;
+        position: unset;
+    }
+    .packages-img img{
+        width: 300px;
+        height: 250px;
+    }
+    .peaky-price-sm{
+        font-size: 15px;
+    }
+
+}

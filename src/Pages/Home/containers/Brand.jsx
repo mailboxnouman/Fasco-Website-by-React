@@ -6,8 +6,10 @@ import brandImg2 from '../../../assets//logo-1.png'
 import brandImg3 from '../../../assets//logo-4.png'
 import brandImg4 from '../../../assets//logo-0.png'
 
+
 function Brand() {
   return (
+    <>
     <div className='brand'>
       <div className="brand-img">
         <img src={brandImg0} alt="" />
@@ -25,6 +27,11 @@ function Brand() {
         <img src={brandImg4} alt="" />
       </div>
     </div>
+    <div className="shadow"></div>
+  
+    </>
+    
+    
   )
 }
 

@@ -1,0 +1,105 @@
+.card{
+    width: 430px;
+    height: 490px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    border-radius: 10px;
+    box-shadow: 0px 40px 90px 0px rgba(0, 0, 0, 0.06);
+    
+/* for gradient border */
+
+
+    /* background:
+    linear-gradient(white 0 0) padding-box,
+    linear-gradient(-30deg, #D8334A, #4FC1E9) border-box;
+  border: 5px solid transparent;
+  border-radius: 1rem; */
+  }
+
+.card-img{
+    width: 430px;
+    height: 300px;
+    border-radius: 10px;
+    text-align: center;
+}
+.card-img img{
+    margin-top: 25px;
+    width: 380px;
+    height: 300px;
+    border-radius: 10px;
+
+}
+
+.heading-review{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 1.6rem 0;
+}
+.heading h1{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+color: #484848;
+}
+.star {
+    color: #ccc;
+  }
+  
+  .star.filled {
+    color: gold;
+  }
+  p.brandName{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 12px;
+color: #8A8A8A;
+margin: 0.2rem 1.6rem 0;
+
+
+}
+p.reviewCount{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #484848;
+  margin: 1.5rem 1.6rem;
+
+  }
+  div.price-quantity {
+    display: flex;
+    justify-content: space-between;
+    margin: 0rem 1.6rem ;
+
+}
+  .price{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 20px;
+letter-spacing: -0.01em;
+
+color: #484848;
+
+
+  }
+  .quantity{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 20px;
+text-align: right;
+letter-spacing: -0.01em;
+
+color: #FF4646;
+
+
+  }
