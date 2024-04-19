@@ -12,6 +12,7 @@ const Layout = () => {
   const isSignInOrSignUpPage = location.pathname === '/signin' || location.pathname === '/signup';
 
   const menuClass = isSignInOrSignUpPage ? 'hidden' : '';
+  const homeClass = isSignInOrSignUpPage ? 'homeClass' : '';
 
   const Menu = () => (
 
@@ -60,7 +61,7 @@ const Layout = () => {
           }
           {toggleMenu && (
             <div className='navbar-menu_container scale-up-center'>
-              <div className="navbar-menu_container-links">
+              <div className={`navbar-menu_container-links ${homeClass}`}>
                 <Menu />
                 <div className="navbar-menu_container-links-sign">
                 <li className={`signin ${menuClass}`}>

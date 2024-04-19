@@ -238,7 +238,17 @@ li.signup{
         text-align: center;
         margin-bottom: 2.5rem;
     }
-    
+    .homeClass{
+        height: 57px;
+    }
+
+    .homeClass ul li {
+        margin-top: -15px;
+    }
+    .scale-up-center{
+         z-index: 1;
+
+    }
 }
 /* header */
 

@@ -3,8 +3,8 @@ import '../components/btn.css'
 
 function Btn(props) {
   return (
-    <div className='btn'>
-      <button>{props.btn}</button>
+    <div className={`btn ${props.className}`}>
+      <button type={props.type}>{props.btn}</button>
     </div>
   )
 }
