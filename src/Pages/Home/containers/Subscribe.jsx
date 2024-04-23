@@ -16,7 +16,7 @@ function Subscribe() {
             <p className='para1-subscribe'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque duis ultrices sollicitudin aliquam sem. Scelerisque duis ultrices sollicitudin </p>
             <p className='email-subscribe'>michael@ymail.com </p>
             </span>
-            <Btn btn="Subscribe Now" />
+            <Btn btn="Subscribe Now"  />
             </div>
             <div className="subscribe-img2">
             <img src={subscribe2} alt="" />

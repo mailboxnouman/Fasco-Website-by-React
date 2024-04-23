@@ -1,0 +1,658 @@
+.signup-main{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    max-width: 1550px;
+    height: 750px;
+    margin: 0 auto;
+}
+.signup-img, .signup-txt{
+    flex: 1;
+}
+.signup-img img{
+    width: 100%;
+    height: 100%;
+}
+.signup-txt{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+.signup-form-box{
+    align-self: flex-start;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    /* border: 2px solid rgba(255,255,255,0.5); */
+    /* border-radius: 20px; */
+    /* backdrop-filter: blur(15px); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signup-logo{
+    font-family: 'Volkhov';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 100%;
+/* identical to box height, or 67px */
+
+color: #484848;
+margin-bottom: 1rem ;
+
+
+}
+.signup-h4{
+   font-family: 'poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 40px;
+/* identical to box height, or 133% */
+
+color: #000000;
+
+margin-bottom: 1rem;
+}
+
+span.signup-withMail{
+
+width: 294px;
+height: 55px;
+
+background: #FFFFFF;
+border: 1px solid #5B86E5;
+border-radius: 8px;
+display: inline-block;
+
+text-align: center;
+}
+.wrap-signup-withMail{
+    display: flex;
+    justify-content: center;
+}
+.signup-mail-link{
+    margin: 0 25px;
+}
+span.signup-withMail:hover{
+    box-shadow: 4px 5px 2px 0px rgba(0, 0, 0, 0.02);
+
+}
+.signup-withMail img{
+    width: 36px;
+    height: 36px;
+    margin-bottom: -10px;
+}
+span.signup-withMail p{
+    display: inline-block;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 40px;
+/* identical to box height, or 250% */
+letter-spacing: 0.08em;
+
+color: #000000;
+/* height: 50px; */
+margin-top: 8px;
+}
+
+.signup-separator{
+    
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 40px;
+/* identical to box height, or 133% */
+letter-spacing: 0.08em;
+
+color: #838383;
+
+text-align: center;
+margin: 2.5rem  0 0rem 0;
+}
+
+.inputbox-signup{
+    position: relative;
+    margin: 30px 10px  ;
+    width: 47%;
+    /* border-bottom: 1px solid  rgba(157, 157, 157, 1); */
+}
+.inputbox-signup label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #000;
+    font-size: 1.5em;
+    pointer-events: none;
+    transition: .5s;
+}
+input:focus ~ label,
+input:valid ~ label{
+top: -5px;
+}
+
+.inputbox-signup input{
+    width: 100%;
+    height: 50px;
+    background: none;
+    background-image: linear-gradient(0deg, #2B93D9 2px, transparent 0), linear-gradient(0deg, rgba(157, 157, 157, 1) 2px, transparent 0);
+  background-position: left bottom, left bottom;
+  background-size: 0 100%, 100% 100%;
+  background-repeat: no-repeat;
+  transition: 0.3s ease-out;
+    border: 0;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    padding: 0 35px 0 5px;
+    /* color: #000; */
+    color: #2B93D9;
+
+}
+.inputbox-signup input:focus {
+    background-size: 100% 100%, 100% 100%;
+    /* color: #2B93D9; */
+    outline: none;
+    border: none;
+    
+} 
+
+
+
+.wrap-inputbox-signup{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 700px;
+}
+
+.signup-txt .btn{
+    margin: 0;
+}
+.signup-txt .btn button{
+    font-size: 1.2em !important;
+    width: 500px;
+    /* display: none; */
+}
+.signup-register-link{
+    width: 500px;
+    align-self: center;
+}
+.registerBtn button{
+    background: #fff;
+    width: 500px;
+    
+border: 1px solid #5B86E5;
+border-radius: 8px;
+color: #5B86E5;
+    box-shadow: none;
+}
+.registerBtn button:hover{
+    background: #5B86E5;
+    color: #fff;
+}
+
+.haveAcc-signup{
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* Forget Password? */
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 40px;
+/* identical to box height, or 250% */
+letter-spacing: 0.08em;
+
+color: #5B86E5;
+margin-right: 8rem;
+margin-top: .4rem;
+margin-bottom: 0;
+
+}
+.haveAcc-signup a{
+    text-decoration: none;
+    color: #5B86E5;
+}
+.haveAcc-signup p{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 40px;
+/* identical to box height, or 250% */
+letter-spacing: 0.08em;
+
+color: #000000;
+margin: 0 10px;
+
+}
+
+.haveAcc-signup label:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.terms-signup{
+    align-self: flex-end;
+    margin: .5rem 0;
+}
+
+
+ @media screen and (max-width: 1700px){
+    .signup-main{
+        max-width: 1350px;
+        height: 650px;
+    }
+    .signup-logo{
+        
+    font-size: 34px;
+    margin-bottom: .6rem ;
+    line-height: 30px;
+    
+    }
+    .signup-h4{
+       
+    font-size: 22px;
+    line-height: 30px;
+    /* identical to box height, or 133% */
+    
+    color: #000000;
+    
+    margin-bottom: .8rem;
+    }
+    
+    span.signup-withMail{
+    
+    width: 260px;
+    height: 45px;
+    }
+    .signup-withMail img{
+        width: 26px;
+        height: 26px;
+        margin-bottom: -8px;
+    }
+    span.signup-withMail p{
+    font-size: 16px;
+    line-height: 40px;
+    margin-top: 2px;
+    }
+    
+    .signup-separator{
+    font-size: 25px;
+    line-height: 25px;
+    margin: 2rem 0 1rem  0;
+    }
+    .wrap-inputbox-signup{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 650px;
+    }
+    .inputbox-signup{
+        position: relative;
+        width: 46%;
+        margin-top: 20px;
+        
+    }
+    .inputbox-signup label{
+        font-size: 1.2em;
+    }
+    input:focus ~ label,
+    input:valid ~ label{
+    top: -5px;
+    }
+    
+    .inputbox-signup input{
+        width: 100%;
+        height: 40px;
+        font-size: 1.3em;
+        padding: 0 35px 0 5px;
+    }
+    
+    .signup-txt .btn{
+        margin: 0rem 0;
+    }
+    .signup-txt .btn button{
+        font-size: 1.2em !important;
+        width: 450px;
+        height: 48px;
+    }
+    .signup-register-link{
+        width: 450px;
+    }
+    .registerBtn button{
+        
+    margin-top: 20px;
+        
+    }
+    .haveAcc-signup{
+        margin-right: 6.5rem;
+        height: 30px;
+    }
+}
+
+ @media screen and (max-width: 1580px){
+    .signup-main{
+        max-width: 1100px;
+        height: 550px;  
+    }
+    .signup-logo{
+        
+    font-size: 26px;
+    margin-bottom: .4rem ;
+    line-height: 30px;
+    
+    }
+    .signup-h4{
+       
+    font-size: 17px;
+    line-height: 20px;
+    /* identical to box height, or 133% */
+    
+    color: #000000;
+    
+    margin-bottom: .8rem;
+    }
+    
+    span.signup-withMail{
+    
+    width: 200px;
+    height: 40px;
+    }
+    .signup-withMail img{
+        width: 25px;
+        height: 25px;
+        margin-bottom: -6px;
+    }
+    span.signup-withMail p{
+    font-size: 13px;
+    line-height: 25px;
+    margin-top: 6px;
+    }
+    
+    .signup-separator{
+    font-size: 18px;
+    line-height: 25px;
+    margin: 1rem 0 1.5rem 0;
+    }
+    .wrap-inputbox-signup{
+        width: 500px;
+    }
+    .inputbox-signup{
+        margin-top: 0px;
+    }
+    .inputbox-signup label{
+        font-size: 1em;
+    }
+    input:focus ~ label,
+    input:valid ~ label{
+    top: -5px !important;
+    }
+    
+    .inputbox-signup input{
+        width: 100%;
+        height: 40px;
+        font-size: .8em;
+        padding: 0 35px 0 5px;
+    }
+    
+   .signup-txt .btn{
+        margin: 0rem 0;
+    }
+   .signup-txt .btn button{
+        font-size: 1.1em !important;
+        width: 320px;
+        height: 44px;
+    }
+    .signup-register-link{
+        width: 320px;
+    }
+    .registerBtn button{
+        
+    margin-top: 15px;
+        
+    }
+    .haveAcc-signup{
+        margin-right: 6.5rem;
+        margin-top: .1rem;
+    }
+}
+@media screen and (max-width: 1200px){
+    .signup-main{
+        max-width: 1050px;
+        height: 500px;  
+    }
+    .signup-logo{
+        
+    font-size: 28px;
+    margin-bottom: .1rem ;
+    
+    
+    }
+    .signup-h4{
+       
+    font-size: 18px;
+    line-height: 30px;
+    /* identical to box height, or 133% */
+    
+    color: #000000;
+    
+    margin-bottom: .6rem;
+    }
+    
+    span.signup-withMail{
+    
+    width: 190px;
+    height: 40px;
+    margin: 0;
+    }
+    
+    .signup-withMail img{
+        width: 20px;
+        height: 20px;
+        margin-bottom: -4px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    span.signup-withMail p{
+    font-size: 12px;
+    line-height: 25px;
+    margin-top: 6px;
+    }
+    .wrap-signup-withMail{
+        margin: 0;
+    }
+    .signup-separator{
+    font-size: 16px;
+    line-height: 30px;
+    margin: 1rem 0 .5rem 0;
+    }
+    .wrap-inputbox-signup{
+        width: 480px;
+    }
+    .inputbox-signup{
+        position: relative;
+        width: 45%;
+    }
+    .inputbox-signup label{
+        font-size: 1em;
+    }
+    input:focus ~ label,
+    input:valid ~ label{
+    top: -5px !important;
+    }
+    
+    .inputbox-signup input{
+        width: 100%;
+        height: 40px;
+        font-size: .8em;
+        padding: 0 35px 0 5px;
+    }
+    
+   .signup-txt .btn{
+        margin: 0rem 0;
+    }
+   .signup-txt .btn button{
+        font-size: 1em !important;
+        width: 320px;
+        height: 44px;
+        letter-spacing: 1px;
+        height: 40px;
+    }
+    
+    .haveAcc-signup{
+    
+        font-size: 13px;
+    }
+    .haveAcc-signup p{
+        font-size: 13px;
+
+    }
+    .terms-signup{
+        font-size: 13px;
+    }
+    
+}
+@media screen and (max-width: 1050px){
+    .signup-main{
+        max-width: 700px;
+        flex-direction: column;
+        min-height: 980px;
+       
+    }
+    /* .signup-form-value, .signup-form-box{
+        width: 500px;
+    } */
+    .signup-txt{
+        box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.02);
+        margin: 0;
+    }
+    .signup-img{
+        display: none;
+    }
+    .signup-logo{
+        text-align: center;
+        font-size: 35px;
+        margin: 0rem 0 1rem ;
+        
+        
+        }
+        .signup-h4{
+           text-align: center;
+        font-size: 18px;
+        line-height: 30px;
+        /* identical to box height, or 133% */
+        
+        color: #000000;
+        
+        margin-bottom: .6rem;
+        }
+        
+        span.signup-withMail{
+        display: inline-block;
+        width: 250px;
+        height: 40px;
+        margin-top: 10px;
+        }
+        .wrap-signup-withMail{
+            flex-direction: column;
+            align-items: center;
+        }
+        .signup-withMail img{
+            width: 20px;
+            height: 20px;
+            margin-bottom: -4px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        span.signup-withMail p{
+        font-size: 13px;
+        line-height: 25px;
+        margin-top: 6px;
+        }
+        
+        .signup-separator{
+        font-size: 20px;
+        line-height: 30px;
+        margin: 2rem 0 0rem 0;
+        }
+        .signup-form-box form{
+            width: 350px;
+        }
+        .wrap-inputbox-signup{
+            /* flex-wrap: nowrap; */
+            width: 350px;
+        }
+        .inputbox-signup{
+            position: relative;
+            margin: 25px 0;
+            width: 100%;
+        }
+        .inputbox-signup label{
+            font-size: 1.2em;
+        }
+        input:focus ~ label,
+        input:valid ~ label{
+        top: -5px !important;
+        }
+        
+        .inputbox-signup input{
+            width: 100%;
+            height: 40px;
+            font-size: 1.1em;
+            padding: 0 35px 0 5px;
+            border: none;
+            outline: none;
+                background-image: linear-gradient(0deg, #2B93D9 1px, transparent 0), linear-gradient(0deg, rgba(157, 157, 157, 1) 1px, transparent 0);
+              
+      }
+        
+       .signup-txt .btn{
+            margin: 0rem 0;
+        }
+       .signup-txt .btn button{
+            font-size: 1.1em !important;
+            width: 250px;
+            height: 44px;
+        }
+        .signup-register-link{
+            width: 250px;
+            align-self: center;
+        }
+        .registerBtn button{
+            
+        margin-top: 5px;
+            
+        }
+        .haveAcc-signup{
+            margin-right: 0rem;
+            justify-content: center;
+            margin-top: 0rem;
+            margin-bottom: 0;
+        }
+        .terms-signup{margin-right: 1rem;}
+}
+@media screen and (max-width: 700px){
+    
+}
+@media screen and (max-width: 550px){
+  
+    .signup-form-box form{
+        width: 300px;
+    }
+    .wrap-inputbox-signup{
+        width: 300px;
+    }
+    span.signup-withMail {
+        width: 300px;
+        }
+} 

@@ -1,6 +1,5 @@
 const handleInputChange = () => {
     const emailInput = document.getElementById('emailInput');
-    const passwordInput = document.getElementById('passwordInput');
 
     const handleInput = (input) => {
         const label = input.nextElementSibling;
@@ -15,9 +14,7 @@ const handleInputChange = () => {
         handleInput(emailInput);
     });
 
-    passwordInput.addEventListener('input', () => {
-        handleInput(passwordInput);
-    });
+   
 
     emailInput.addEventListener('focus', () => {
         handleInput(emailInput);
@@ -27,13 +24,6 @@ const handleInputChange = () => {
         handleInput(emailInput);
     });
 
-    passwordInput.addEventListener('focus', () => {
-        handleInput(passwordInput);
-    });
-
-    passwordInput.addEventListener('blur', () => {
-        handleInput(passwordInput);
-    });
 };
 
 export default handleInputChange;
