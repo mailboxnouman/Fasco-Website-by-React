@@ -15,7 +15,7 @@ function Packages() {
             <p className="title">Women Collection</p>
             <h1 className="heading-peaky">Peaky Blinders</h1>
             <p className="discription-title">DESCRIPTION</p>
-            <p className="discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque duis ultrices sollicitudin aliquam sem. Scelerisque duis ultrices sollicitudin. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque duis.</p>
+            <p className="discription">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non repudiandae animi rerum optio nemo consequuntur. Reiciendis quos aspernatur temporibus at, placeat voluptate libero dignissimos nostrum. Accusantium qui rem quam omnis!</p>
             <p className="size">Size: <span className='size-property'>M</span></p>
             <p className="peaky-price">$100.<span className='peaky-price-sm' >00</span></p>
             <Btn btn="Buy Now" />

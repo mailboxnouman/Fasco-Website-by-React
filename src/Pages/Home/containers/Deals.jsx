@@ -72,7 +72,7 @@ function Deals() {
             <Carrosel />
           </div>
         </div>
-\      </div>
+     </div>
     </div>
   );
 }

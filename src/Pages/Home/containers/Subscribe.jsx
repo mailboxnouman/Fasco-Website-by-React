@@ -48,7 +48,7 @@ function Subscribe() {
         <span className="subscribeTxtBox">
           <h1 className='head1-subscribe'>Subscribe To Our Newsletter</h1>
           <p className='para1-subscribe'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque duis ultrices sollicitudin aliquam sem. Scelerisque duis ultrices sollicitudin </p>
-          <p className='email-subscribe'>michael@ymail.com </p>
+          <p className='email-subscribe'>michael@gmail.com </p>
         </span>
         <Btn btn="Subscribe Now" />
       </div>
