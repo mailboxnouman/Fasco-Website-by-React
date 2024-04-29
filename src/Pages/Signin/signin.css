@@ -133,16 +133,26 @@ input:valid ~ label{
 top: -5px;
 }
 
+.inputbox-signin input:focus{
+    background-size: 100% 100%, 100% 100%;
+    outline: none;
+    border: none;
+}
 .inputbox-signin input{
     width: 100%;
     height: 50px;
     background: transparent;
-    border: none;
-    outline: none;
     font-size: 1.3em;
     letter-spacing: 1px;
     padding: 0 35px 0 5px;
-    color: #000;
+    color: #2B93D9;
+    background: none;
+    background-image: linear-gradient(0deg, #2B93D9 1px, transparent 0), linear-gradient(0deg, rgba(157, 157, 157, 1) 1px, transparent 0);
+  background-position: left bottom, left bottom;
+  background-size: 0 100%, 100% 100%;
+  background-repeat: no-repeat;
+  transition: 0.3s ease-out;
+    border: 0;
 }
 
 .signin-txt .btn{

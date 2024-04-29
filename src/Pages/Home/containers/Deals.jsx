@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Outlet, Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import '../containers/deals.css';
 import Btn from '../../../components/Btn';
 import Carrosel from '../../../components/Carousel';
 
 function Deals() {
   const calculateTimeLeft = () => {
-    const difference = +new Date('2024-04-28') - +new Date();
+    const difference = +new Date('2024-06-28') - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
@@ -34,7 +34,12 @@ function Deals() {
 
     return () => clearTimeout(timer);
   });
+  const navigate = useNavigate()
 
+  const handleSubmit = (event) => {
+    event.preventDefault(); 
+    navigate('/signin')
+  };
   return (
     <div className="deals-m">
       <div className="deals-main" id='deals'>
@@ -45,9 +50,9 @@ function Deals() {
             duis ultrices sollicitudin aliquam sem. Scelerisque duis ultrices
             sollicitudin
           </p>
-         <div className='deals-btn'> <Link to="signin">
-            <Btn btn="Buy Now" />
-          </Link> </div>
+         <div className='deals-btn'> 
+            <Btn btn="Buy Now" onClick={handleSubmit} />
+           </div>
           <p className='deals-para2'>Hurry, Before It’s Too Late!</p>
           <div className="timer">
             <div className="days">{formatTime(timeLeft.days)}  </div>
@@ -67,8 +72,7 @@ function Deals() {
             <Carrosel />
           </div>
         </div>
-        <Outlet />
-      </div>
+\      </div>
     </div>
   );
 }

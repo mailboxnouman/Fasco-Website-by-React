@@ -1,3 +1,7 @@
+.wrap-subscribe-main{
+    width: 100%;
+    overflow: hidden;
+}
 .subscribe-main{
     display: flex;
     justify-content: space-around;
@@ -47,9 +51,35 @@ padding: 3.5rem 0 2rem 1.5rem;
 }
 
 
-/* .subscribe-img1 , .subscribe-img2, .subscribe-txt{
-flex-grow: 1;
-} */
+.subscribe-img1 img.animate {
+  opacity: 1;
+  animation: slideLeft 1s linear; 
+}
+
+.subscribe-img2 img.animate {
+  opacity: 1;
+  animation: slideRight 1s linear; 
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(-50%); 
+  }
+  100% {
+    transform: translateX(0); 
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(50%); 
+  }
+  100% {
+    transform: translateX(0); 
+  }
+}
+
+
 .subscribe-img1 img, .subscribe-img2 img {
 width: 355px;
 height: 747px;

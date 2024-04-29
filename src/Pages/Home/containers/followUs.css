@@ -26,7 +26,7 @@ color: rgba(138, 138, 138, 1);
 width: 650px;
 
 }
-.img-followUs{
+.img-followUs {
     display: flex;
     align-items: center;
     width: 100%;
@@ -38,7 +38,9 @@ width: 650px;
     width: 100%;
 }
 
-
+.image-container{
+    display: none;
+}
 @media screen and (max-width: 1700px){
     .followUs-main{
         width: 100%;
@@ -51,36 +53,54 @@ width: 650px;
 @media screen and (max-width: 1200px){
     
 }
-@media screen and (max-width: 1050px){
-    .para1-followUs{
-        width: 100%;
-        max-width: 650px;
-        padding: 0 2rem;
+@media screen and (max-width: 1050px) {
+    .img-followUs {
+      position: relative;
+      width: 100%;
+      margin-top: 4rem;
+      flex-direction: column;
+      display: none;
     }
-    .img-followUs{
-        flex-direction: column;
-        width: 100%;
+  
+    .image-container {
+        margin-top: 40px;
+        display:block;
+      position: relative;
+      width: 70%;
+      height: 450px;
+      overflow: hidden;
+      border-radius: 20px;
+
     }
-    .img-followUs div:nth-of-type(1),
-    .img-followUs div:nth-of-type(3),
-    .img-followUs div:nth-of-type(5),
-    .img-followUs div:nth-of-type(7){
-        padding: 0 6rem;
+  
+    .image-container img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
     }
-}
+  }
 @media screen and (max-width: 700px){
-    .img-followUs div:nth-of-type(1),
-    .img-followUs div:nth-of-type(3),
-    .img-followUs div:nth-of-type(5),
-    .img-followUs div:nth-of-type(7){
-        padding: 0 4rem;
+    
+    .para1-followUs{
+        max-width: 500px;
+    }
+    .image-container {
+      width: 90%;
+      height: 350px;
+
     }
 }
 @media screen and (max-width: 550px){
-    .img-followUs div:nth-of-type(1),
-    .img-followUs div:nth-of-type(3),
-    .img-followUs div:nth-of-type(5),
-    .img-followUs div:nth-of-type(7){
-        padding: 0 3rem;
+   
+    .para1-followUs{
+        max-width: 300px;
     }
+    .image-container {
+        width: 90%;
+        height: 220px;
+  
+      }
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-  import { Outlet, Link } from "react-router-dom";
+  import {  useNavigate } from "react-router-dom";
 import '../containers/hero.css'
 import heroLeft from '../../../assets/image 2 28.png'
 import heroRight from '../../../assets/image 227.png'
@@ -9,6 +9,12 @@ import Btn from '../../../components/Btn'
 
 
 function Hero() {
+  const navigate = useNavigate()
+
+  const handleSubmit = (event) => {
+    event.preventDefault(); 
+    navigate('/signin')
+  };
   return (
     <div className='hero-main'>
 
@@ -23,7 +29,7 @@ function Hero() {
           <span className="ultimate">ULTIMATE</span>
           <span className="sale">SALE</span>
           <span className="newCol">NEW COLLECTION</span>
-          <Link to="signin"><Btn btn="SHOP NOW"/></Link> 
+          <Btn btn="SHOP NOW" type='submit' onClick={handleSubmit}/>
         </div>
         <div className="hero-sub-sub">
           <img src={heroSubDown} alt="" />
@@ -32,7 +38,6 @@ function Hero() {
       <div className="hero-sub">
         <img src={heroRight} alt="" />
       </div>
-      <Outlet />
     </div>
 
   )

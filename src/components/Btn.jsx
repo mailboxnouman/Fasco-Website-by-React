@@ -4,7 +4,7 @@ import '../components/btn.css'
 function Btn(props) {
   return (
     <div className={`btn ${props.className}`}>
-      <button type={props.type}>{props.btn}</button>
+      <button type={props.type} onClick={props.onClick}>{props.btn}</button>
     </div>
   )
 }

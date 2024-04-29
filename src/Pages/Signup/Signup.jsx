@@ -7,7 +7,7 @@ import signup from '../../assets/signin.png'
 import gmail from '../../assets/gmail.png'
 import email from '../../assets/email.png'
 import handleInputChange from './inputLabelSignup';
-import Password from './Password';
+import Password from '../../components/Password';
 
 function Signup() {
 

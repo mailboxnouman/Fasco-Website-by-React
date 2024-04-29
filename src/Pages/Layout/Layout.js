@@ -9,7 +9,7 @@ import logo from '../../assets/logo.png'
 const Layout = () => {
   const [toggleMenu, setToggleMenu] = useState(false)
   const location = useLocation();
-  const isSignInOrSignUpPage = location.pathname === '/signin' || location.pathname === '/signup';
+  const isSignInOrSignUpPage = location.pathname === '/signin' || location.pathname === '/signup' || location.pathname === '/forget';
 
   const menuClass = isSignInOrSignUpPage ? 'hidden' : '';
   const homeClass = isSignInOrSignUpPage ? 'homeClass' : '';

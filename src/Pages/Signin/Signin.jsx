@@ -62,7 +62,7 @@ const handleSubmit = (event) => {
         </div>
         <Link to="/signup" className='signin-register-link'><Btn btn="Register Now" className='registerBtn'  /></Link>
               <div className="forget-signin">
-              <Link to="/">  <label >Forget Password</label> </Link>
+              <Link to="/forget">  <label >Forget Password</label> </Link>
 
               </div>
         <div className="terms-signin">

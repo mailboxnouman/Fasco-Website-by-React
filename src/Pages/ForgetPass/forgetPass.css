@@ -1,4 +1,4 @@
-.signup-main{
+.forget-main{
     display: flex;
     justify-content: center;
     /* align-items: center; */
@@ -6,19 +6,19 @@
     height: 750px;
     margin: 0 auto;
 }
-.signup-img, .signup-txt{
+.forget-img, .forget-txt{
     flex: 1;
 }
-.signup-img img{
+.forget-img img{
     width: 100%;
     height: 100%;
 }
-.signup-txt{
+.forget-txt{
     display: flex;
     flex-direction: column;
     margin-left: 50px;
 }
-.signup-form-box{
+.forget-form-box{
     align-self: flex-start;
     position: relative;
     width: 100%;
@@ -31,7 +31,7 @@
     justify-content: center;
     align-items: center;
 }
-.signup-logo{
+.forget-logo{
     font-family: 'Volkhov';
 font-style: normal;
 font-weight: 400;
@@ -44,7 +44,7 @@ margin-bottom: 1rem ;
 
 
 }
-.signup-h4{
+.forget-h4{
    font-family: 'poppins';
 font-style: normal;
 font-weight: 400;
@@ -54,75 +54,23 @@ line-height: 40px;
 
 color: #000000;
 
+margin-top: 5rem;
 margin-bottom: 1rem;
 }
 
-span.signup-withMail{
-
-width: 294px;
-height: 55px;
-
-background: #FFFFFF;
-border: 1px solid #5B86E5;
-border-radius: 8px;
-display: inline-block;
-
-text-align: center;
-}
-.wrap-signup-withMail{
-    display: flex;
-    justify-content: center;
-}
-.signup-mail-link{
-    margin: 0 25px;
-}
-span.signup-withMail:hover{
-    box-shadow: 4px 5px 2px 0px rgba(0, 0, 0, 0.02);
-
-}
-.signup-withMail img{
-    width: 36px;
-    height: 36px;
-    margin-bottom: -10px;
-}
-span.signup-withMail p{
-    display: inline-block;
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 40px;
-/* identical to box height, or 250% */
-letter-spacing: 0.08em;
-
-color: #000000;
-/* height: 50px; */
-margin-top: 8px;
-}
-
-.signup-separator{
-    
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 700;
-font-size: 30px;
-line-height: 40px;
-/* identical to box height, or 133% */
-letter-spacing: 0.08em;
-
-color: #838383;
-
-text-align: center;
-margin: 2.5rem  0 0rem 0;
-}
-
-.inputbox-signup{
+.inputbox-forget{
     position: relative;
     margin: 30px 10px  ;
     width: 47%;
     /* border-bottom: 1px solid  rgba(157, 157, 157, 1); */
 }
-.inputbox-signup label{
+.inputbox-otp{
+    position: relative;
+    margin: 30px 10px  ;
+    width: 100%;
+    /* border-bottom: 1px solid  rgba(157, 157, 157, 1); */
+}
+.inputbox-forget label, .inputbox-otp label{
     position: absolute;
     top: 50%;
     left: 5px;
@@ -137,11 +85,11 @@ input:valid ~ label{
 top: -5px;
 }
 
-.inputbox-signup input{
+.inputbox-forget input, .inputbox-otp input{
     width: 100%;
     height: 50px;
     background: none;
-    background-image: linear-gradient(0deg, #2B93D9 2px, transparent 0), linear-gradient(0deg, rgba(157, 157, 157, 1) 1px, transparent 0);
+    background-image: linear-gradient(0deg, #2B93D9 2px, transparent 0), linear-gradient(0deg, rgba(157, 157, 157, 1) 2px, transparent 0);
   background-position: left bottom, left bottom;
   background-size: 0 100%, 100% 100%;
   background-repeat: no-repeat;
@@ -154,8 +102,9 @@ top: -5px;
     color: #2B93D9;
 
 }
-.inputbox-signup input:focus {
+.inputbox-forget input:focus, .inputbox-otp input:focus{
     background-size: 100% 100%, 100% 100%;
+    /* color: #2B93D9; */
     outline: none;
     border: none;
     
@@ -163,22 +112,30 @@ top: -5px;
 
 
 
-.wrap-inputbox-signup{
+.wrap-inputbox-forget{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     width: 700px;
 }
 
-.signup-txt .btn{
+.wrap-inputbox-otp{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+.forget-txt .btn{
     margin: 0;
 }
-.signup-txt .btn button{
+.forget-txt .btn button{
     font-size: 1.2em !important;
     width: 500px;
     /* display: none; */
 }
-.signup-register-link{
+.forget-register-link{
     width: 500px;
     align-self: center;
 }
@@ -196,7 +153,7 @@ color: #5B86E5;
     color: #fff;
 }
 
-.haveAcc-signup{
+.haveAcc-forget{
     margin: -15px 0 15px;
     display: flex;
     justify-content: center;
@@ -217,11 +174,11 @@ margin-top: .4rem;
 margin-bottom: 0;
 
 }
-.haveAcc-signup a{
+.haveAcc-forget a{
     text-decoration: none;
     color: #5B86E5;
 }
-.haveAcc-signup p{
+.haveAcc-forget p{
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 400;
@@ -235,30 +192,30 @@ margin: 0 10px;
 
 }
 
-.haveAcc-signup label:hover{
+.haveAcc-forget label:hover{
     text-decoration: underline;
     cursor: pointer;
 }
 
-.terms-signup{
+.terms-forget{
     align-self: flex-end;
     margin: .5rem 0;
 }
 
 
  @media screen and (max-width: 1700px){
-    .signup-main{
+    .forget-main{
         max-width: 1350px;
         height: 650px;
     }
-    .signup-logo{
+    .forget-logo{
         
     font-size: 34px;
     margin-bottom: .6rem ;
     line-height: 30px;
     
     }
-    .signup-h4{
+    .forget-h4{
        
     font-size: 22px;
     line-height: 30px;
@@ -266,43 +223,22 @@ margin: 0 10px;
     
     color: #000000;
     
-    margin-bottom: .8rem;
+    margin-bottom: 1rem;
     }
     
-    span.signup-withMail{
-    
-    width: 260px;
-    height: 45px;
-    }
-    .signup-withMail img{
-        width: 26px;
-        height: 26px;
-        margin-bottom: -8px;
-    }
-    span.signup-withMail p{
-    font-size: 16px;
-    line-height: 40px;
-    margin-top: 2px;
-    }
-    
-    .signup-separator{
-    font-size: 25px;
-    line-height: 25px;
-    margin: 2rem 0 1rem  0;
-    }
-    .wrap-inputbox-signup{
+    .wrap-inputbox-forget{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         width: 650px;
     }
-    .inputbox-signup{
+    .inputbox-forget{
         position: relative;
         width: 46%;
         margin-top: 20px;
         
     }
-    .inputbox-signup label{
+    .inputbox-forget label{
         font-size: 1.2em;
     }
     input:focus ~ label,
@@ -310,22 +246,22 @@ margin: 0 10px;
     top: -5px;
     }
     
-    .inputbox-signup input{
+    .inputbox-forget input{
         width: 100%;
         height: 40px;
         font-size: 1.3em;
         padding: 0 35px 0 5px;
     }
     
-    .signup-txt .btn{
+    .forget-txt .btn{
         margin: 0rem 0;
     }
-    .signup-txt .btn button{
+    .forget-txt .btn button{
         font-size: 1.2em !important;
         width: 450px;
         height: 48px;
     }
-    .signup-register-link{
+    .forget-register-link{
         width: 450px;
     }
     .registerBtn button{
@@ -333,25 +269,25 @@ margin: 0 10px;
     margin-top: 20px;
         
     }
-    .haveAcc-signup{
+    .haveAcc-forget{
         margin-right: 6.5rem;
         height: 30px;
     }
 }
 
  @media screen and (max-width: 1580px){
-    .signup-main{
+    .forget-main{
         max-width: 1100px;
         height: 550px;  
     }
-    .signup-logo{
+    .forget-logo{
         
     font-size: 26px;
     margin-bottom: .4rem ;
     line-height: 30px;
     
     }
-    .signup-h4{
+    .forget-h4{
        
     font-size: 17px;
     line-height: 20px;
@@ -359,37 +295,16 @@ margin: 0 10px;
     
     color: #000000;
     
-    margin-bottom: .8rem;
+    margin-bottom: 2rem;
     }
     
-    span.signup-withMail{
-    
-    width: 200px;
-    height: 40px;
-    }
-    .signup-withMail img{
-        width: 25px;
-        height: 25px;
-        margin-bottom: -6px;
-    }
-    span.signup-withMail p{
-    font-size: 13px;
-    line-height: 25px;
-    margin-top: 6px;
-    }
-    
-    .signup-separator{
-    font-size: 18px;
-    line-height: 25px;
-    margin: 1rem 0 1.5rem 0;
-    }
-    .wrap-inputbox-signup{
+    .wrap-inputbox-forget{
         width: 500px;
     }
-    .inputbox-signup{
+    .inputbox-forget{
         margin-top: 0px;
     }
-    .inputbox-signup label{
+    .inputbox-forget label{
         font-size: 1em;
     }
     input:focus ~ label,
@@ -397,22 +312,22 @@ margin: 0 10px;
     top: -5px !important;
     }
     
-    .inputbox-signup input{
+    .inputbox-forget input{
         width: 100%;
         height: 40px;
         font-size: .8em;
         padding: 0 35px 0 5px;
     }
     
-   .signup-txt .btn{
+   .forget-txt .btn{
         margin: 0rem 0;
     }
-   .signup-txt .btn button{
+   .forget-txt .btn button{
         font-size: 1.1em !important;
         width: 320px;
         height: 44px;
     }
-    .signup-register-link{
+    .forget-register-link{
         width: 320px;
     }
     .registerBtn button{
@@ -420,24 +335,24 @@ margin: 0 10px;
     margin-top: 15px;
         
     }
-    .haveAcc-signup{
+    .haveAcc-forget{
         margin-right: 6.5rem;
         margin-top: .1rem;
     }
 }
 @media screen and (max-width: 1200px){
-    .signup-main{
+    .forget-main{
         max-width: 1050px;
         height: 500px;  
     }
-    .signup-logo{
+    .forget-logo{
         
     font-size: 28px;
     margin-bottom: .1rem ;
     
     
     }
-    .signup-h4{
+    .forget-h4{
        
     font-size: 18px;
     line-height: 30px;
@@ -445,44 +360,17 @@ margin: 0 10px;
     
     color: #000000;
     
-    margin-bottom: .6rem;
+    margin-bottom: 1.5rem;
     }
     
-    span.signup-withMail{
-    
-    width: 190px;
-    height: 40px;
-    margin: 0;
-    }
-    
-    .signup-withMail img{
-        width: 20px;
-        height: 20px;
-        margin-bottom: -4px;
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-    span.signup-withMail p{
-    font-size: 12px;
-    line-height: 25px;
-    margin-top: 6px;
-    }
-    .wrap-signup-withMail{
-        margin: 0;
-    }
-    .signup-separator{
-    font-size: 16px;
-    line-height: 30px;
-    margin: 1rem 0 .5rem 0;
-    }
-    .wrap-inputbox-signup{
+    .wrap-inputbox-forget{
         width: 480px;
     }
-    .inputbox-signup{
+    .inputbox-forget{
         position: relative;
         width: 45%;
     }
-    .inputbox-signup label{
+    .inputbox-forget label{
         font-size: 1em;
     }
     input:focus ~ label,
@@ -490,17 +378,17 @@ margin: 0 10px;
     top: -5px !important;
     }
     
-    .inputbox-signup input{
+    .inputbox-forget input{
         width: 100%;
         height: 40px;
         font-size: .8em;
         padding: 0 35px 0 5px;
     }
     
-   .signup-txt .btn{
+   .forget-txt .btn{
         margin: 0rem 0;
     }
-   .signup-txt .btn button{
+   .forget-txt .btn button{
         font-size: 1em !important;
         width: 320px;
         height: 44px;
@@ -508,95 +396,68 @@ margin: 0 10px;
         height: 40px;
     }
     
-    .haveAcc-signup{
+    .haveAcc-forget{
     
         font-size: 13px;
     }
-    .haveAcc-signup p{
+    .haveAcc-forget p{
         font-size: 13px;
 
     }
-    .terms-signup{
+    .terms-forget{
         font-size: 13px;
     }
     
 }
 @media screen and (max-width: 1050px){
-    .signup-main{
+    .forget-main{
         max-width: 700px;
         flex-direction: column;
-        min-height: 980px;
+        min-height: 650px;
        
     }
-    /* .signup-form-value, .signup-form-box{
+    /* .forget-form-value, .forget-form-box{
         width: 500px;
     } */
-    .signup-txt{
+    .forget-txt{
         box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.02);
         margin: 0;
     }
-    .signup-img{
+    .forget-img{
         display: none;
     }
-    .signup-logo{
+    .forget-logo{
         text-align: center;
         font-size: 35px;
         margin: 0rem 0 1rem ;
         
         
         }
-        .signup-h4{
+        .forget-h4{
            text-align: center;
         font-size: 18px;
         line-height: 30px;
         /* identical to box height, or 133% */
         
         color: #000000;
+margin-top: 1rem;
         
         margin-bottom: .6rem;
         }
         
-        span.signup-withMail{
-        display: inline-block;
-        width: 250px;
-        height: 40px;
-        margin-top: 10px;
-        }
-        .wrap-signup-withMail{
-            flex-direction: column;
-            align-items: center;
-        }
-        .signup-withMail img{
-            width: 20px;
-            height: 20px;
-            margin-bottom: -4px;
-            margin-left: 5px;
-            margin-right: 5px;
-        }
-        span.signup-withMail p{
-        font-size: 13px;
-        line-height: 25px;
-        margin-top: 6px;
-        }
-        
-        .signup-separator{
-        font-size: 20px;
-        line-height: 30px;
-        margin: 2rem 0 0rem 0;
-        }
-        .signup-form-box form{
+        .forget-form-box form{
             width: 350px;
         }
-        .wrap-inputbox-signup{
+        .wrap-inputbox-forget{
             /* flex-wrap: nowrap; */
             width: 350px;
         }
-        .inputbox-signup{
+        .inputbox-forget{
             position: relative;
             margin: 25px 0;
             width: 100%;
         }
-        .inputbox-signup label{
+        .inputbox-forget label{
             font-size: 1.2em;
         }
         input:focus ~ label,
@@ -604,7 +465,7 @@ margin: 0 10px;
         top: -5px !important;
         }
         
-        .inputbox-signup input{
+        .inputbox-forget input{
             width: 100%;
             height: 40px;
             font-size: 1.1em;
@@ -615,15 +476,15 @@ margin: 0 10px;
               
       }
         
-       .signup-txt .btn{
+       .forget-txt .btn{
             margin: 0rem 0;
         }
-       .signup-txt .btn button{
-            font-size: 1.1em !important;
+       .forget-txt .btn button{
+            font-size: .8em !important;
             width: 250px;
             height: 44px;
         }
-        .signup-register-link{
+        .forget-register-link{
             width: 250px;
             align-self: center;
         }
@@ -632,26 +493,24 @@ margin: 0 10px;
         margin-top: 5px;
             
         }
-        .haveAcc-signup{
+        .haveAcc-forget{
             margin-right: 0rem;
             justify-content: center;
             margin-top: 0rem;
             margin-bottom: 0;
         }
-        .terms-signup{margin-right: 1rem;}
+        .terms-forget{margin-right: 1rem;}
 }
 @media screen and (max-width: 700px){
     
 }
 @media screen and (max-width: 550px){
   
-    .signup-form-box form{
+    .forget-form-box form{
         width: 300px;
     }
-    .wrap-inputbox-signup{
+    .wrap-inputbox-forget{
         width: 300px;
     }
-    span.signup-withMail {
-        width: 300px;
-        }
+  
 } 

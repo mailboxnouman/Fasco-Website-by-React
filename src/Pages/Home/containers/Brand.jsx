@@ -10,25 +10,60 @@ import brandImg4 from '../../../assets//logo-0.png'
 function Brand() {
   return (
     <>
-    <div className='brand'>
-      <div className="brand-img">
-        <img src={brandImg0} alt="" />
-      </div>
-      <div className="brand-img">
-        <img src={brandImg1} alt="" />
-      </div>
-      <div className="brand-img">
-        <img src={brandImg2} alt="" />
-      </div>
-      <div className="brand-img">
-        <img src={brandImg3} alt="" />
-      </div>
-      <div className="brand-img">
-        <img src={brandImg4} alt="" />
+    <div className="brand">
+    <div className="slider">
+      <div className="slide-track">
+        <div className="slide">
+          <img src={brandImg0}  alt="" />
+        </div>
+        <div className="slide">
+          <img src={brandImg1}  alt="" />
+        </div>
+        <div className="slide">
+          <img src={brandImg2}  alt="" />
+        </div>
+        <div className="slide">
+          <img src={brandImg3}  alt="" />
+        </div>
+        <div className="slide">
+          <img src={brandImg4}  alt="" />
+        </div>
+        <div className="slide">
+          <img src={brandImg0}  alt="" />
+        </div>
+        <div className="slide">
+          <img src={brandImg1}  alt="" />
+        </div>
+        <div className="slide">
+          <img src={brandImg2}  alt="" />
+        </div>
+        <div className="slide">
+          <img src={brandImg3}  alt="" />
+        </div>
+        <div className="slide">
+          <img src={brandImg4}  alt="" />
+        </div>
+        <div className="slide">
+          <img src={brandImg0}  alt="" />
+        </div>
+        <div className="slide">
+          <img src={brandImg1}  alt="" />
+        </div>
+        <div className="slide">
+          <img src={brandImg2}  alt="" />
+        </div>
+        <div className="slide">
+          <img src={brandImg3}  alt="" />
+        </div>
+        <div className="slide">
+          <img src={brandImg4}  alt="" />
+        </div>
       </div>
     </div>
+    </div>
+
     <div className="shadow"></div>
-  
+    
     </>
     
     
