@@ -162,6 +162,9 @@ margin-top: 15px;
     }
 }
 @media screen and (max-width: 550px){
+    .deals-m{
+        padding-bottom: 30px;
+    }
     .deals-txt h1{
         font-size: 35px;
         line-height: 45px;
@@ -174,8 +177,8 @@ margin-top: 15px;
     .deals-img, .deals-txt{
         width: 90%;
     }
-    .btn{
-        margin-top: 10px;
+    .deals-txt .btn{
+        margin: 20px 0 0 0
     }
     .deals-para2{
         font-size: 20px;

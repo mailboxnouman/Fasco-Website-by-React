@@ -1,4 +1,5 @@
 import React from 'react'
+import './home.css'
 import Hero from './containers/Hero'
 import Brand from './containers/Brand'
 import Deals from './containers/Deals'

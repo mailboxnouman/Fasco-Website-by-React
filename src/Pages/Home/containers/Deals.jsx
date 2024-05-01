@@ -51,7 +51,7 @@ function Deals() {
             sollicitudin
           </p>
          <div className='deals-btn'> 
-            <Btn btn="Buy Now" onClick={handleSubmit} />
+            <Btn btn="Buy Now" onClick={handleSubmit} className="deals-btn" />
            </div>
           <p className='deals-para2'>Hurry, Before It’s Too Late!</p>
           <div className="timer">

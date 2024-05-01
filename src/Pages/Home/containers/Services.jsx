@@ -10,42 +10,42 @@ function Services() {
   return (
     <>
     <div className="services">
-    <div className="slider">
-      <div className="slide-track">
-        <div className="slide">
+    <div className="slider-services">
+      <div className="slide-track-services">
+        <div className="slide-services">
           <img src={servicesImg1}  alt="" />
         </div>
-        <div className="slide">
+        <div className="slide-services">
           <img src={servicesImg2}  alt="" />
         </div>
-        <div className="slide">
+        <div className="slide-services">
           <img src={servicesImg3}  alt="" />
         </div>
-        <div className="slide">
+        <div className="slide-services">
           <img src={servicesImg4}  alt="" />
         </div>
-        <div className="slide">
+        <div className="slide-services">
           <img src={servicesImg1}  alt="" />
         </div>
-        <div className="slide">
+        <div className="slide-services">
           <img src={servicesImg2}  alt="" />
         </div>
-        <div className="slide">
+        <div className="slide-services">
           <img src={servicesImg3}  alt="" />
         </div>
-        <div className="slide">
+        <div className="slide-services">
           <img src={servicesImg4}  alt="" />
         </div>
-        <div className="slide">
+        <div className="slide-services">
           <img src={servicesImg1}  alt="" />
         </div>
-        <div className="slide">
+        <div className="slide-services">
           <img src={servicesImg2}  alt="" />
         </div>
-        <div className="slide">
+        <div className="slide-services">
           <img src={servicesImg3}  alt="" />
         </div>
-        <div className="slide">
+        <div className="slide-services">
           <img src={servicesImg4}  alt="" />
         </div>
       </div>

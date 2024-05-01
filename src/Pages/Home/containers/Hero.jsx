@@ -13,7 +13,7 @@ function Hero() {
 
   const handleSubmit = (event) => {
     event.preventDefault(); 
-    navigate('/signin')
+    navigate('/shop')
   };
   return (
     <div className='hero-main'>
@@ -29,7 +29,7 @@ function Hero() {
           <span className="ultimate">ULTIMATE</span>
           <span className="sale">SALE</span>
           <span className="newCol">NEW COLLECTION</span>
-          <Btn btn="SHOP NOW" type='submit' onClick={handleSubmit}/>
+          <Btn className="hero-btn" btn="SHOP NOW" type='submit' onClick={handleSubmit}/>
         </div>
         <div className="hero-sub-sub">
           <img src={heroSubDown} alt="" />

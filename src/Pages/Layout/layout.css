@@ -69,6 +69,19 @@ ul li a:hover,.signin a:hover{
     bottom: -10px;
     transition: 0.3s;
 }
+.activeClass a:after{
+    content: "";
+    position: absolute;
+    background-color: #676666;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+}
+.activeClass a:hover{
+color: #484848;
+}
 .signup {
     margin-left: 2rem;
     margin-right: 1rem;
@@ -120,7 +133,7 @@ li.signup{
     flex-direction: column;
 
     text-align: end;
-    padding: 2rem;
+    padding: 1rem 2rem;
     position: absolute;
     top: 40px;
     right: 0;
@@ -128,6 +141,8 @@ li.signup{
     min-width: 210px;
     border-radius: 5px;
     border: 0 0 5 rgba(0,0,0,0.2);
+    z-index: 1  ;
+
 }
 .navbar-menu_container-links{
     background-color: #FAFAFA;  
@@ -146,7 +161,18 @@ li.signup{
     border: 2px dotted #000000;
 }
 .hidden{
-    display: none;
+    display: none !important;
+}
+.navbar-icons_container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-icons_container img {
+    width: 20px;
+    height: 20px;
+    margin-left: 25px;
+
 }
 
 @media screen and (max-width: 1700px){
@@ -187,18 +213,25 @@ li.signup{
     .navbar-menu{
         display: flex;
     }
+    .navbar-icons_container{
+        margin-right: 20px;
+    }
 }
 @media screen and (max-width: 700px){
     .navbar{
-        padding: 2rem 2rem;
+        padding: .5rem 1rem;
     }
+.navbar-links_logo img {
+    width: 130px;
+    height: 60px;
+}
     li.signup{
         padding: 0;
     }
     .signup a{
         
         border: 2px solid #000000;
-        padding: 15px 35px;
+        padding: 8px 25px;
     }
    
     .signin{
@@ -207,11 +240,14 @@ li.signup{
 }
 @media screen and (max-width: 550px){
     .navbar{
-        padding: 1rem;
+        padding: .2rem .3rem;
     }
     .navbar-links_logo img {
-        width: 150px;
-        height: 70px;
+        width: 100px;
+        height: 50px;
+    }
+    .navbar-menu{
+        width: 33px;
     }
     .navbar-sign{
         display: none;
@@ -222,6 +258,7 @@ li.signup{
     }
     .navbar-menu_container{
         top: 20px;
+        margin: 0;
     }
     .signup{
         margin-top: 15px;
@@ -249,6 +286,12 @@ li.signup{
          z-index: 1;
 
     }
+    
+    .navbar-icons_container img {
+        width: 15px;
+        height: 15px;
+        margin-left: 18px;
+    
+    }
 }
-/* header */
 

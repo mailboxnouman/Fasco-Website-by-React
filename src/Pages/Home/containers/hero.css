@@ -72,14 +72,15 @@ font-weight: 500;
 line-height: 187px;
 letter-spacing: -0.055em;
 text-align: center;
-
+-webkit-text-stroke: .09rem black;
 color: white;
+/* color: white;
     text-shadow: 
-      0 0 1px #000, 
-      0 0 1px #000, 
-      0 0 1px #000, 
-      0 0 1px #000; 
-    user-select: none;
+      0 0 2px #000, 
+      0 0 2px #000, 
+      0 0 2px #000, 
+      0 0 2px #000; 
+    user-select: none; */
 
 }
 
@@ -95,7 +96,7 @@ user-select: none;
 
 }
 
-.btn{
+.hero-sub-subTxt .btn{
     margin-top: 20px;
     /* height: 56px;
     margin-top: -40px; */
@@ -200,15 +201,20 @@ user-select: none;
         flex-direction: column;
         align-items: center;
     }
+    
     .hero-sub:nth-of-type(1){
         order: 1;
+        display: none;
     }
     .hero-sub:nth-of-type(2){
         margin: 10px;
         order: 0;
+        
     }
     .hero-sub:nth-of-type(3){
         order: 2;
+        display: none;
+
     }
     .hero-sub:nth-of-type(2){
         width: 680px;
@@ -308,22 +314,16 @@ user-select: none;
     }
     .hero-sub:nth-of-type(2){
         width: 310px;
-        height:650px;
+        height:600px;
     }
-    .hero-sub:nth-of-type(1),.hero-sub:nth-of-type(3){
-        width: 310px;
-    height: 450px;
-    margin: 10px;
-    }
+   
     .hero-sub:nth-of-type(1) img{
         width: 280px;
     }
-    .hero-sub:nth-of-type(3) img{
-        width: 180px;
-    }
+    
     .hero-sub-sub{
         width: 310px;
-    height: 135px;
+    height: 115px;
     background: #E0E0E0;
     border-radius: 10px;
     /* margin: 10px; */
@@ -331,24 +331,29 @@ user-select: none;
     }
     .hero-sub-sub:nth-of-type(1) img{
         margin-left: 5px;
-        margin-top: 25px;
+        margin-top: 5px;
         width: 300px;
     }
     .hero-sub-sub:nth-of-type(3) img{
         width: 310px;
-        height: 135px;
+        height: 115px;
     }
     .hero-sub-subTxt{
         margin: 0px;
     }
     .ultimate{
-        font-size: 60px;
+        font-size: 72px;
         line-height: 60px;
     }
     .sale{
-    font-size: 140px;
+    font-size: 152px;
     line-height: 140px;
     }
+    .hero-btn button{
+        height: 40px !important;
+        width: 195px !important;
+    }
+
 }
 /* @media screen and (max-width: 1580px){
     
